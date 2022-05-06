@@ -1,0 +1,1 @@
+'segment .text' can be used in place of 'section .text'
