@@ -24,22 +24,22 @@ _start:
 	mov ebx,STDOUT 
 	mov ecx,msg1 
 	mov edx, len1 
-	int 80h 
+	int 128
 	
 	mov eax,SYS_WRITE
         mov ebx,STDOUT
         mov ecx,msg2
         mov edx,len2
-        int 80h 
+        int 128 
 
 
 	mov eax,SYS_WRITE
         mov ebx,STDOUT
         mov ecx,msg3
         mov edx, len3
-        int 80h
+        int 128
 
 
 	mov eax,SYS_EXIT 
-	int 80h
+	int 128
 
